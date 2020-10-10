@@ -3,6 +3,7 @@ package com.example.foodbankapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import maes.tech.intentanim.CustomIntent;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ import android.os.Bundle;
 public class forgot extends AppCompatActivity {
 
     private EditText emailpass;
-    ImageButton resetbtn;
+    ImageButton resetbtn, back;
     FirebaseAuth fAuth;
 
     @Override
@@ -30,7 +31,18 @@ public class forgot extends AppCompatActivity {
 
         emailpass=findViewById(R.id.editTextTextEmailAddress);
         resetbtn=findViewById(R.id.imageButton32);
+        back = findViewById(R.id.imageButton7);
         fAuth =  FirebaseAuth.getInstance();
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(forgot.this, login.class);
+                startActivity(intent);
+                CustomIntent.customType(forgot.this, "up-to-bottom");
+            }
+        });
+
 
         resetbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +61,7 @@ public class forgot extends AppCompatActivity {
                                 Toast.makeText(forgot.this,"Password Reset email sent !", Toast.LENGTH_SHORT).show();
                                 finish();
                                 startActivity(new Intent(forgot.this, login.class));
+                                CustomIntent.customType(forgot.this, "up-to-bottom");
                             }else{
                                 Toast.makeText(forgot.this,"Error in sending password reset email !", Toast.LENGTH_SHORT).show();
 
@@ -61,5 +74,13 @@ public class forgot extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        Intent intent = new Intent(forgot.this, login.class);
+        startActivity(intent);
+        CustomIntent.customType(forgot.this, "up-to-bottom");
     }
 }

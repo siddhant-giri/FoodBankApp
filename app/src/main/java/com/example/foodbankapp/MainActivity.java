@@ -1,6 +1,7 @@
 package com.example.foodbankapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import maes.tech.intentanim.CustomIntent;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent= new Intent(MainActivity.this,login.class);
                 startActivity(intent);
+                CustomIntent.customType(MainActivity.this, "left-to-right");
             }
         });
 

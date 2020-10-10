@@ -2,6 +2,7 @@ package com.example.foodbankapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import maes.tech.intentanim.CustomIntent;
 
 
 import android.content.Intent;
@@ -28,7 +29,7 @@ public class login extends AppCompatActivity {
     public TextView create;
     TextView forgot;
     EditText mEmail, mPassword;
-    ImageButton loginbtn;
+    ImageButton loginbtn, back;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
@@ -44,13 +45,23 @@ public class login extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         create=findViewById(R.id.link);
         forgot=findViewById(R.id.textView);
+        back = findViewById(R.id.imageButton6);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                CustomIntent.customType(login.this, "right-to-left");
+            }
+        });
 
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getApplicationContext(), register.class);
                 startActivity(intent);
-
+                CustomIntent.customType(login.this, "up-to-bottom");
                 Toast.makeText(login.this, "Moving to Signup", Toast.LENGTH_SHORT).show();
             }
         });
@@ -60,7 +71,7 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(getApplicationContext(), forgot.class);
                 startActivity(intent);
-
+                CustomIntent.customType(login.this, "bottom-to-up");
                 Toast.makeText(login.this, "Reset Your Password !", Toast.LENGTH_SHORT).show();
             }
         });
@@ -99,6 +110,7 @@ public class login extends AppCompatActivity {
 
                             Toast.makeText(login.this,"Logged in successfully!",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),onboard.class));
+                            CustomIntent.customType(login.this, "left-to-right");
                         }else{
                             Toast.makeText(login.this, "Error!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
@@ -109,7 +121,19 @@ public class login extends AppCompatActivity {
                 });
 
 
+
+
             }
         });
+
+
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        Intent intent= new Intent(login.this, MainActivity.class);
+        startActivity(intent);
+        CustomIntent.customType(login.this, "right-to-left");
     }
 }

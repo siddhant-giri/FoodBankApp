@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class onboard extends AppCompatActivity {
 
-    ImageButton proceed;
+    ImageButton proceed, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,16 @@ public class onboard extends AppCompatActivity {
         setContentView(R.layout.activity_onboard);
 
         proceed = (ImageButton) findViewById(R.id.imageButton2);
+        back = (ImageButton) findViewById(R.id.imageButton8);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(onboard.this, login.class);
+                startActivity(intent);
+                CustomIntent.customType(onboard.this, "right-to-left");
+            }
+        });
 
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,5 +37,13 @@ public class onboard extends AppCompatActivity {
                 CustomIntent.customType(onboard.this, "fadein-to-fadeout");
             }
         });
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        Intent intent = new Intent(onboard.this, login.class);
+        startActivity(intent);
+        CustomIntent.customType(onboard.this, "right-to-left");
     }
 }

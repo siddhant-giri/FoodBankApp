@@ -18,7 +18,7 @@ import android.os.Bundle;
 
 public class store extends AppCompatActivity {
 
-    ImageButton ricebtn, flourbtn, sugarbtn, oilbtn, vegbtn, milkbtn, dalbtn, contactbtn;
+    ImageButton ricebtn, flourbtn, sugarbtn, oilbtn, vegbtn, milkbtn, dalbtn, contactbtn, logout;
     TextView ricetxt, flourtxt, sugartxt, oiltxt, vegtxt, milktxt, daltxt;
     ImageView riceimg, flourimg,  sugarimg, oilimg, vegimg, milkimg, dalimg;
 
@@ -26,6 +26,17 @@ public class store extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+
+        logout = (ImageButton) findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(store.this, login.class);
+                startActivity(intent);
+                CustomIntent.customType(store.this, "right-to-left");
+            }
+        });
 
 
         sugarbtn = (ImageButton) findViewById(R.id.sugarbtn);
@@ -195,5 +206,13 @@ public class store extends AppCompatActivity {
                 CustomIntent.customType(store.this, "left-to-right");
             }
         });
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        Intent intent = new Intent(store.this, onboard.class);
+        startActivity(intent);
+        CustomIntent.customType(store.this, "right-to-left");
     }
 }

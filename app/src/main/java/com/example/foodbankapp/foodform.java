@@ -99,15 +99,17 @@ public class foodform extends AppCompatActivity {
                     return;
                 }
 
+                if(TextUtils.isEmpty(pqty)){
+                    Toast.makeText(foodform.this, "enter quantity please",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 if(TextUtils.isEmpty(pnumber)){
                     Toast.makeText(foodform.this, "enter number please",Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if(TextUtils.isEmpty(pqty)){
-                    Toast.makeText(foodform.this, "enter quantity please",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+
 
                 if(TextUtils.isEmpty(ppkts)){
                     Toast.makeText(foodform.this, "enter number of packets please",Toast.LENGTH_SHORT).show();
@@ -147,6 +149,8 @@ public class foodform extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
+        Intent intent = new Intent(foodform.this, store.class);
+        startActivity(intent);
         CustomIntent.customType(foodform.this, "fadein-to-fadeout");
     }
 }

@@ -2,6 +2,7 @@ package com.example.foodbankapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import maes.tech.intentanim.CustomIntent;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,7 +24,7 @@ import android.os.Bundle;
 public class register extends AppCompatActivity {
 
     EditText mFullname, mEmail, mPassword,mConfirm;
-    ImageButton signupbtn;
+    ImageButton signupbtn, back;
     TextView loginbtn;
     FirebaseAuth fAuth;
     ProgressBar progressbar;
@@ -40,6 +41,7 @@ public class register extends AppCompatActivity {
         signupbtn = findViewById(R.id.imageButton);
         loginbtn = findViewById(R.id.textView2);
         progressbar = findViewById(R.id.progressBar);
+        back = findViewById(R.id.imageButton9);
 
         fAuth =  FirebaseAuth.getInstance();
 
@@ -49,6 +51,15 @@ public class register extends AppCompatActivity {
 
         }
         */
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(register.this, login.class);
+                startActivity(intent);
+                CustomIntent.customType(register.this, "bottom-to-up");
+            }
+        });
 
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,8 +114,17 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),login.class));
+                CustomIntent.customType(register.this, "bottom-to-up");
             }
         });
 
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        Intent intent = new Intent(register.this, login.class);
+        startActivity(intent);
+        CustomIntent.customType(register.this, "bottom-to-up");
     }
 }
