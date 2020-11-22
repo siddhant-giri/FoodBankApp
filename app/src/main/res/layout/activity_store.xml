@@ -558,25 +558,26 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.571"
-            app:layout_constraintStart_toEndOf="@+id/imageButton25"
+            app:layout_constraintStart_toEndOf="@+id/camerabutton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.533"
             app:srcCompat="@drawable/call" />
 
         <ImageButton
-            android:id="@+id/imageButton25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/camerabutton"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
             android:background="#FFFFFF"
+            android:tint="#B7B7B7"
             app:layout_constraintBottom_toBottomOf="@+id/imageView36"
             app:layout_constraintEnd_toEndOf="@+id/imageView36"
             app:layout_constraintHorizontal_bias="0.14"
             app:layout_constraintStart_toEndOf="@+id/imageButton11"
             app:layout_constraintTop_toTopOf="@+id/imageView36"
             app:layout_constraintVertical_bias="0.594"
-            app:srcCompat="@drawable/chat" />
+            app:srcCompat="@android:drawable/ic_menu_camera" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

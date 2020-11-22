@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodbankapp">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_icon"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".contact"></activity>
+        <activity android:name=".cameraCapture"></activity>
+        <activity android:name=".contact" />
         <activity android:name=".foodform" />
         <activity android:name=".store" />
         <activity android:name=".onboard" />

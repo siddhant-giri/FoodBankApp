@@ -8,17 +8,13 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-import android.os.Bundle;
-
 public class store extends AppCompatActivity {
 
-    ImageButton ricebtn, flourbtn, sugarbtn, oilbtn, vegbtn, milkbtn, dalbtn, contactbtn, logout;
+    ImageButton ricebtn, flourbtn, sugarbtn, oilbtn, vegbtn, milkbtn, dalbtn, contactbtn, logout, cambtn;
     TextView ricetxt, flourtxt, sugartxt, oiltxt, vegtxt, milktxt, daltxt;
     ImageView riceimg, flourimg,  sugarimg, oilimg, vegimg, milkimg, dalimg;
 
@@ -26,6 +22,8 @@ public class store extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
+
+
 
         logout = (ImageButton) findViewById(R.id.logout);
 
@@ -206,6 +204,18 @@ public class store extends AppCompatActivity {
                 CustomIntent.customType(store.this, "left-to-right");
             }
         });
+
+        cambtn = (ImageButton) findViewById(R.id.camerabutton);
+
+        cambtn.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View view) {
+                                          Intent intent = new Intent(store.this, cameraCapture.class);
+                                          startActivity(intent);
+                                          CustomIntent.customType(store.this, "left-to-right");
+                                      }
+                                  }
+        );
     }
 
     @Override
