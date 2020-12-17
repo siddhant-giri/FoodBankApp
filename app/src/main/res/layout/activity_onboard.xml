@@ -40,10 +40,10 @@
         android:layout_marginLeft="52dp"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="144dp"
         android:gravity="center"
         android:lineSpacingExtra="2sp"
-        android:text="Let’s fight the hunger! We, at FOODBANK provide nd donate  food for people who are suffering from the pandemic disease. We offere them  necessary groceries as required. You can also join our campaign and  help people get relieved. Contact for  more."
+        android:text="Let’s fight the hunger! Using our app, You can donate the needy  necessary groceries as required. You can also join our campaign and  help people get relieved. Contact for  more."
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.394"
-        app:srcCompat="@drawable/deliver" />
+        app:srcCompat="@drawable/onboardingpng" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

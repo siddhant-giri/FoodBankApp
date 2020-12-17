@@ -44,15 +44,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="28dp"
                     android:background="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.062"
                     app:layout_constraintStart_toEndOf="@+id/riceimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/riceimg"
@@ -71,31 +68,15 @@
                     app:srcCompat="@drawable/rice" />
 
                 <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="59 Rs/kg"
-                    android:textColor="#070707"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.017"
-                    app:layout_constraintStart_toEndOf="@+id/riceimg"
-                    app:layout_constraintTop_toBottomOf="@+id/ricetxt" />
-
-                <TextView
                     android:id="@+id/ricetxt"
-                    android:layout_width="59dp"
-                    android:layout_height="42dp"
+                    android:layout_width="97dp"
+                    android:layout_height="31dp"
                     android:layout_marginStart="26dp"
                     android:layout_marginLeft="26dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="168dp"
                     android:layout_marginRight="168dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Rice"
                     android:textColor="#0C0C0C"
                     android:textSize="24sp"
@@ -104,11 +85,36 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/riceimg"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of rice is appreciated"
+                    android:textColor="#4b4c4d"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of flour is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
                     android:id="@+id/flourbtn"
@@ -116,15 +122,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="28dp"
                     android:background="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/flourimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView25"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/flourimg"
@@ -143,29 +146,13 @@
                     app:srcCompat="@drawable/flour" />
 
                 <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="60 Rs/kg"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.009"
-                    app:layout_constraintStart_toEndOf="@+id/flourimg"
-                    app:layout_constraintTop_toBottomOf="@+id/flourtxt" />
-
-                <TextView
                     android:id="@+id/flourtxt"
-                    android:layout_width="51dp"
-                    android:layout_height="42dp"
+                    android:layout_width="93dp"
+                    android:layout_height="39dp"
                     android:layout_marginStart="26dp"
                     android:layout_marginLeft="26dp"
                     android:layout_marginTop="32dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Flour"
                     android:textColor="#040404"
                     android:textSize="24sp"
@@ -182,17 +169,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of sugar is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageButton
                     android:id="@+id/sugarbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
                     android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/sugarimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView26"
-                    app:srcCompat="@drawable/book" />
+                    app:layout_constraintTop_toBottomOf="@+id/sugartxt"
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/sugarimg"
@@ -211,26 +213,12 @@
                     app:srcCompat="@drawable/sugar" />
 
                 <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="90 Rs/kg"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintStart_toEndOf="@+id/sugarimg"
-                    app:layout_constraintTop_toBottomOf="@+id/sugartxt" />
-
-                <TextView
                     android:id="@+id/sugartxt"
                     android:layout_width="74dp"
                     android:layout_height="37dp"
                     android:layout_marginStart="26dp"
                     android:layout_marginLeft="26dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Sugar"
                     android:textColor="#070707"
                     android:textSize="24sp"
@@ -247,21 +235,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of milk is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageButton
                     android:id="@+id/milkbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="20dp"
                     android:background="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/milkimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/milkimg"
@@ -280,29 +277,13 @@
                     app:srcCompat="@drawable/milk" />
 
                 <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="20 Rs/L"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.008"
-                    app:layout_constraintStart_toEndOf="@+id/milkimg"
-                    app:layout_constraintTop_toBottomOf="@+id/milktxt" />
-
-                <TextView
                     android:id="@+id/milktxt"
                     android:layout_width="51dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="28dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Milk"
                     android:textColor="#000000"
                     android:textSize="24sp"
@@ -319,21 +300,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of oil is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageButton
                     android:id="@+id/oilbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="28dp"
                     android:background="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/oilimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/oilimg"
@@ -352,29 +342,13 @@
                     app:srcCompat="@drawable/oil" />
 
                 <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="80 Rs/L"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.026"
-                    app:layout_constraintStart_toEndOf="@+id/oilimg"
-                    app:layout_constraintTop_toBottomOf="@+id/oiltxt" />
-
-                <TextView
                     android:id="@+id/oiltxt"
                     android:layout_width="51dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="26dp"
                     android:layout_marginLeft="26dp"
                     android:layout_marginTop="32dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Oil"
                     android:textColor="#000000"
                     android:textSize="24sp"
@@ -391,6 +365,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of veggies is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageButton
                     android:id="@+id/vegbtn"
                     android:layout_width="wrap_content"
@@ -399,8 +385,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/vegimg"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17"
-                    app:srcCompat="@drawable/book" />
+                    app:srcCompat="@drawable/donatebtn" />
 
                 <ImageView
                     android:id="@+id/vegimg"
@@ -419,27 +404,13 @@
                     app:srcCompat="@drawable/veg" />
 
                 <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="20 Rs /kg"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.195"
-                    app:layout_constraintStart_toEndOf="@+id/vegimg"
-                    app:layout_constraintTop_toBottomOf="@+id/vegtxt" />
-
-                <TextView
                     android:id="@+id/vegtxt"
                     android:layout_width="51dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="36dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Veggies"
                     android:textColor="#0B0A0A"
                     android:textSize="24sp"
@@ -455,17 +426,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="121dp"
+                    android:layout_height="73dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Any type, quantity or quality of dal is appreciated"
+                    android:textColor="#4B4C4D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.805"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageButton
                     android:id="@+id/dalbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="52dp"
                     android:background="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.619"
                     app:layout_constraintStart_toEndOf="@+id/dalimg"
-                    app:layout_constraintTop_toTopOf="@+id/textView28"
                     app:srcCompat="@drawable/book" />
 
                 <ImageView
@@ -483,26 +464,13 @@
                     app:srcCompat="@drawable/dal" />
 
                 <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="40 Rs/kg"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.328"
-                    app:layout_constraintStart_toEndOf="@+id/dalimg"
-                    app:layout_constraintTop_toBottomOf="@+id/daltxt" />
-
-                <TextView
                     android:id="@+id/daltxt"
                     android:layout_width="51dp"
                     android:layout_height="41dp"
                     android:layout_marginStart="41dp"
                     android:layout_marginLeft="41dp"
                     android:layout_marginTop="32dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:text="Dal"
                     android:textColor="#000000"
                     android:textSize="24sp"
@@ -577,7 +545,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton11"
             app:layout_constraintTop_toTopOf="@+id/imageView36"
             app:layout_constraintVertical_bias="0.594"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            app:srcCompat="@drawable/chat" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

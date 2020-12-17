@@ -1,27 +1,18 @@
 package com.example.foodbankapp;
 
 class FormHelperClass {
-    String vname, vqty, vnumber, vpkts, vadd, vpeople, vproduct;
+    String vname, vqty, vnumber, vpickup, vdate, vproduct;
 
     public FormHelperClass() {
 
     }
 
-    public FormHelperClass(String vname, String vnumber, String vqty, String vpkts, String vadd, String vpeople, String vproduct) {
+    public FormHelperClass(String vname, String vnumber, String vqty, String vpickup, String vdate, String vproduct) {
         this.vname = vname;
         this.vqty = vqty;
         this.vnumber = vnumber;
-        this.vpkts = vpkts;
-        this.vadd = vadd;
-        this.vpeople = vpeople;
-        this.vproduct = vproduct;
-    }
-
-    public String getVproduct() {
-        return vproduct;
-    }
-
-    public void setVproduct(String vproduct) {
+        this.vpickup = vpickup;
+        this.vdate = vdate;
         this.vproduct = vproduct;
     }
 
@@ -49,27 +40,27 @@ class FormHelperClass {
         this.vnumber = vnumber;
     }
 
-    public String getVpkts() {
-        return vpkts;
+    public String getVpickup() {
+        return vpickup;
     }
 
-    public void setVpkts(String vpkts) {
-        this.vpkts = vpkts;
+    public void setVpickup(String vpickup) {
+        this.vpickup = vpickup;
     }
 
-    public String getVadd() {
-        return vadd;
+    public String getVdate() {
+        return vdate;
     }
 
-    public void setVadd(String vadd) {
-        this.vadd = vadd;
+    public void setVdate(String vdate) {
+        this.vdate = vdate;
     }
 
-    public String getVpeople() {
-        return vpeople;
+    public String getVproduct() {
+        return vproduct;
     }
 
-    public void setVpeople(String vpeople) {
-        this.vpeople = vpeople;
+    public void setVproduct(String vproduct) {
+        this.vproduct = vproduct;
     }
 }

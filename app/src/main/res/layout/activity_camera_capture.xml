@@ -7,7 +7,7 @@
     tools:context=".cameraCapture">
 
     <ImageView
-        android:id="@+id/imageCapture"
+        android:id="@+id/captureImg"
         android:layout_width="368dp"
         android:layout_height="382dp"
         android:background="@drawable/capture_illustration"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCapture"
+        app:layout_constraintTop_toBottomOf="@+id/captureImg"
         app:layout_constraintVertical_bias="0.619"
         app:srcCompat="@drawable/camera_btn2" />
 
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCapture"
+        app:layout_constraintTop_toBottomOf="@+id/captureImg"
         app:layout_constraintVertical_bias="0.23" />
 
     <ImageButton

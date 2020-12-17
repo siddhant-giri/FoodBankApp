@@ -25,7 +25,7 @@ public class cameraCapture extends AppCompatActivity {
 
         backbtn = (ImageButton) findViewById(R.id.imageButton);
         btnCaptureImage= (ImageButton) findViewById(R.id.btn_capture);
-        imageDisplay=(ImageView)findViewById(R.id.imageCapture);
+        imageDisplay=(ImageView)findViewById(R.id.captureImg);
 
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override

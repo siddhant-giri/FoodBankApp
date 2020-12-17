@@ -57,7 +57,7 @@
         android:textColor="#0B0B0B"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton23"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.606" />
 
     <ImageButton
-        android:id="@+id/imageButton23"
+        android:id="@+id/imageButton200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView18"
         app:layout_constraintTop_toTopOf="@+id/imageView18"
         app:layout_constraintVertical_bias="0.558"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@drawable/chat" />
 
     <ImageButton
         android:id="@+id/imageButton26"
@@ -146,20 +146,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logout" />
-
-    <TextView
-        android:id="@+id/location_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location"
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
 
     <Button
         android:id="@+id/location_btn"
